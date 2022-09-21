@@ -4,29 +4,12 @@ import java.util.Scanner;
 
 public class Main {
     private static int[][] memo;
-    private static int[] pesos;
-    private static int[] valores;
-    private static int capacidade;
-    private static int qtd;
     private static Scanner sc = new Scanner(System.in);
 
-    private static long numeroDeChamadas = 0;
-
-    public static int opt(int pos, int capacidade){
-        if(pos < 0 || capacidade == 0){
-            return 0;
-        }
-
-        numeroDeChamadas += 1;
-
-        int bia = opt(pos-1, capacidade);
-
-        if(pesos[pos]>capacidade){
-            return bia;
-        }
-
-        return Math.max(bia, opt(pos-1, capacidade-pesos[pos]) + valores[pos]);
-    }
+    private static int qtd;
+    private static int capacidade;
+    private static int valores[];;
+    private static int pesos[];
 
     public static void main(String[] args) {
         qtd = sc.nextInt();
@@ -40,12 +23,45 @@ public class Main {
             pesos[i] = sc.nextInt();
         }
 
-        long begin = System.currentTimeMillis();
-        int valorMax = opt(qtd-1, capacidade);
-        long end = System.currentTimeMillis();
+        Instance instance = Instance.builder()
+                .capacidade(capacidade)
+                .qtd(qtd)
+                .pesos(pesos)
+                .valores(valores)
+                .build();
 
-        System.out.println("valor maximo => "+ valorMax);
-        System.out.println("Número de chamadas => "+ numeroDeChamadas);
-        System.out.println("Valor em milisegundos => "+ (end-begin));
+        mochilaOtimizada(instance);
+        mochilaPedreragem(instance);
+
+    }
+
+    private static void mochilaPedreragem(Instance instance){
+        Mochila mochila = new MochilaPedreragem(instance);
+
+        mochila.solve();
+
+        InfoInstance info = mochila.getInfo();
+
+        System.out.println("*** Mochila sem memorizacao ***");
+        System.out.println("valor maximo => "+ info.getAns());
+        System.out.println("Quantidade de itens => "+ info.getNumeroItens());
+        System.out.println("Número de chamadas => "+ info.getNumeroDeChamadas());
+        System.out.println("Valor em milisegundos => "+ info.getTimeMillis());
+        System.out.println("Valor em nanosegundos => "+ (info.getTimeNano()/1e6)+" * 1e6\n" );
+    }
+
+    private static void mochilaOtimizada(Instance instance){
+        Mochila mochila = new MochilaMemorizada(instance);
+
+        mochila.solve();
+
+        InfoInstance info = mochila.getInfo();
+
+        System.out.println("*** Mochila otimizada ***");
+        System.out.println("valor maximo => "+ info.getAns());
+        System.out.println("Quantidade de itens => "+ info.getNumeroItens());
+        System.out.println("Número de chamadas => "+ info.getNumeroDeChamadas());
+        System.out.println("Valor em milisegundos => "+ info.getTimeMillis());
+        System.out.println("Valor em nanosegundos => "+ (info.getTimeNano()/1e6)+" * 1e6\n" );
     }
 }
