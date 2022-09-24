@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d7c9e27-3f21-4427-80db-77838c755189" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/uem/Executavel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/uem/InfoInstance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/uem/Instance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/uem/Mochila.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/uem/MochilaMemorizada.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/uem/MochilaPedreragem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/uem/Observavel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conversor/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/uem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/uem/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/uem/MochilaPedreragem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/uem/MochilaBruta.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +44,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
@@ -124,5 +117,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

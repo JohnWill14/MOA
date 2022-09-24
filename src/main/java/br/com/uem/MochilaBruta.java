@@ -3,7 +3,7 @@ package br.com.uem;
 import lombok.Data;
 
 @Data
-public class MochilaPedreragem implements Mochila {
+public class MochilaBruta implements Mochila {
     private int[] pesos;
     private int[] valores;
     private int capacidade;
@@ -16,7 +16,7 @@ public class MochilaPedreragem implements Mochila {
 
     private long numeroDeChamadas = 0;
 
-    public MochilaPedreragem(Instance instance){
+    public MochilaBruta(Instance instance){
         this.qtd = instance.getQtd();
         this.capacidade = instance.getCapacidade();
         this.valores = instance.getValores();

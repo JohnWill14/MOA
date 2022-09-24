@@ -36,7 +36,7 @@ public class Main {
     }
 
     private static void mochilaPedreragem(Instance instance){
-        Mochila mochila = new MochilaPedreragem(instance);
+        Mochila mochila = new MochilaBruta(instance);
 
         mochila.solve();
 
@@ -45,7 +45,6 @@ public class Main {
         System.out.println("*** Mochila sem memorizacao ***");
         System.out.println("valor maximo => "+ info.getAns());
         System.out.println("Quantidade de itens => "+ info.getNumeroItens());
-        System.out.println("Número de chamadas => "+ info.getNumeroDeChamadas());
         System.out.println("Valor em milisegundos => "+ info.getTimeMillis());
         System.out.println("Valor em nanosegundos => "+ (info.getTimeNano()/1e6)+" * 1e6\n" );
     }
@@ -60,7 +59,6 @@ public class Main {
         System.out.println("*** Mochila otimizada ***");
         System.out.println("valor maximo => "+ info.getAns());
         System.out.println("Quantidade de itens => "+ info.getNumeroItens());
-        System.out.println("Número de chamadas => "+ info.getNumeroDeChamadas());
         System.out.println("Valor em milisegundos => "+ info.getTimeMillis());
         System.out.println("Valor em nanosegundos => "+ (info.getTimeNano()/1e6)+" * 1e6\n" );
     }
