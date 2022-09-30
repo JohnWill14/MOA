@@ -1,4 +1,4 @@
-package br.com.uem;
+package br.com.uem.mochila;
 
 import lombok.Builder;
 import lombok.Data;

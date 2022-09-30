@@ -1,10 +1,10 @@
-package br.com.uem;
+package br.com.uem.mochila;
 
+import br.com.uem.InfoInstance;
 import lombok.Data;
 
 @Data
-public class MochilaMemorizada implements Mochila {
-    private int[][] memo;
+public class MochilaBruta implements Mochila {
     private int[] pesos;
     private int[] valores;
     private int capacidade;
@@ -17,7 +17,7 @@ public class MochilaMemorizada implements Mochila {
 
     private long numeroDeChamadas = 0;
 
-    public MochilaMemorizada(Instance instance){
+    public MochilaBruta(Instance instance){
         this.qtd = instance.getQtd();
         this.capacidade = instance.getCapacidade();
         this.valores = instance.getValores();
@@ -29,21 +29,15 @@ public class MochilaMemorizada implements Mochila {
             return 0;
         }
 
-        if(memo[pos][capacidade] != -1)
-            return memo[pos][capacidade];
-
         numeroDeChamadas += 1;
 
         int optOne = opt(pos-1, capacidade);
-        int ans;
+
         if(pesos[pos]>capacidade){
-            ans = optOne;
-        }else{
-            ans = Math.max(optOne, opt(pos-1, capacidade-pesos[pos]) + valores[pos]);
+            return optOne;
         }
 
-        memo[pos][capacidade] = ans;
-        return ans;
+        return Math.max(optOne, opt(pos-1, capacidade-pesos[pos]) + valores[pos]);
     }
 
     @Override
@@ -60,7 +54,6 @@ public class MochilaMemorizada implements Mochila {
 
     @Override
     public void solve() {
-        resetArrayMemo();
 
         long begin = System.currentTimeMillis();
         long beginNano = System.nanoTime();
@@ -73,15 +66,5 @@ public class MochilaMemorizada implements Mochila {
         this.timeMillis = end-begin;
         this.timeNano = endNano - beginNano;
 
-    }
-
-    private void resetArrayMemo(){
-        memo = new int[qtd][capacidade+1];
-
-        for(int i = 0;i<qtd; i++){
-            for(int j = 0;j<= capacidade; j++){
-                memo[i][j] = -1;
-            }
-        }
     }
 }
