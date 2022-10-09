@@ -60,15 +60,7 @@ public class MochilaComMelhoramento implements Mochila {
         objetosSelecionados = melhoramento(collect, objetosSelecionados);
 
 
-        System.out.println("Objetos selecionados");
-        objetosSelecionados.stream()
-                .forEach(System.out::println);
-
-        System.out.println("peso: "+pesoObjetos+"\nvalor: "+ getAns(objetosSelecionados));
-
-
-
-        return 0;
+        return getAns(objetosSelecionados);
     }
 
     private List<ValorObjetoRelativo> melhoramento( Set<ValorObjetoRelativo> objetosForaDaMochila,
@@ -86,11 +78,6 @@ public class MochilaComMelhoramento implements Mochila {
         int cont = 0, i = 0;
 
         while (cont<novaResposta.size()){
-
-            System.out.println("SOLUCAO "+i++);
-            System.out.println("peso: "+ getSomaPeso(objetosSelecionados));
-            System.out.println("valor: "+ getAns(objetosSelecionados));
-            System.out.println("--------");
 
             ValorObjetoRelativo valorObjetoRelativo = novaResposta.get(novaResposta.size() - (cont+1));
             pesoMochila -= valorObjetoRelativo.getPeso();
