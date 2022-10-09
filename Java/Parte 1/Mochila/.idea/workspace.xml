@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="467fdbf6-a5e9-46c8-a328-eeb4e9eb8c2f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Parte 2/Mochila/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parte 2/Mochila/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parte 2/Mochila/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parte 2/Mochila/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parte 2/Mochila/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parte 2/Mochila/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/src/main/java/br/com/uem/Executavel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/src/main/java/br/com/uem/InfoInstance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/src/main/java/br/com/uem/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/src/main/java/br/com/uem/Observavel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/src/main/java/br/com/uem/caixeiro/BitMask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/src/main/java/br/com/uem/caixeiro/Caixeiro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/src/main/java/br/com/uem/caixeiro/CaixeiroATSP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/src/main/java/br/com/uem/caixeiro/InstanceATSP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/src/main/java/br/com/uem/caixeiro/Mask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Caixeiro/src/main/java/br/com/uem/caixeiro/MaskBruta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/conversor/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_1_10000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_1_1000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_1_100_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_1_2000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_1_200_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_1_5000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_1_500_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_2_10000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_2_1000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_2_100_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_2_2000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_2_200_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_2_5000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_2_500_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_3_10000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_3_1000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_3_100_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_3_2000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_3_200_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_3_5000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale-optimum/knapPI_3_500_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_1_10000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_1_1000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_1_100_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_1_2000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_1_200_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_1_5000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_1_500_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_2_10000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_2_1000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_2_100_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_2_2000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_2_200_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_2_5000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_2_500_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_3_10000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_3_1000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_3_100_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_3_2000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_3_200_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_3_5000_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/large_scale/knapPI_3_500_1000_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional-optimum/f10_l-d_kp_20_879" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional-optimum/f1_l-d_kp_10_269" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional-optimum/f2_l-d_kp_20_878" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional-optimum/f3_l-d_kp_4_20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional-optimum/f4_l-d_kp_4_11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional-optimum/f5_l-d_kp_15_375" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional-optimum/f6_l-d_kp_10_60" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional-optimum/f7_l-d_kp_7_50" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional-optimum/f8_l-d_kp_23_10000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional-optimum/f9_l-d_kp_5_80" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional/f10_l-d_kp_20_879" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional/f1_l-d_kp_10_269" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional/f2_l-d_kp_20_878" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional/f3_l-d_kp_4_20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional/f4_l-d_kp_4_11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional/f5_l-d_kp_15_375" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional/f6_l-d_kp_10_60" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional/f7_l-d_kp_7_50" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional/f8_l-d_kp_23_10000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/instances/low-dimensional/f9_l-d_kp_5_80" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/src/main/java/br/com/uem/Executavel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/src/main/java/br/com/uem/InfoInstance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/src/main/java/br/com/uem/mochila/Instance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/src/main/java/br/com/uem/mochila/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/src/main/java/br/com/uem/mochila/Mochila.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/src/main/java/br/com/uem/mochila/MochilaBruta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/src/main/java/br/com/uem/mochila/MochilaMemorizada.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mochila/src/main/java/br/com/uem/mochila/Observavel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/uem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/uem/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/uem/Observavel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/uem/Observavel.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2Fqs6ytqFPAFNZl7U5P20W2OH6L" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/johnwill14/MOA/trab-moa/Java/Parte 1/Mochila"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Mochila" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Mochila" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="467fdbf6-a5e9-46c8-a328-eeb4e9eb8c2f" name="Changes" comment="" />
+      <created>1665230777122</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665230777122</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
