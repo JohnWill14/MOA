@@ -1,16 +1,11 @@
 package br.com.uem.caixeiro;
 
 import br.com.uem.InfoInstance;
-import org.apache.commons.lang3.tuple.ImmutablePair;
-import org.apache.commons.lang3.tuple.Pair;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class CaixeiroATSP implements Caixeiro{
-    private Map<Pair<Integer, Mask>, Integer> memo;
-
     private int[] visitado;
 
     private int cont =0;
@@ -19,55 +14,115 @@ public class CaixeiroATSP implements Caixeiro{
 
     public CaixeiroATSP(InstanceATSP instance) {
         super();
-        memo = new HashMap<>();
         this.dimension = instance.getDimension();
         this.dist = instance.getArestas();
+        visitado = new int[this.dimension];
+
     }
 
 
 
-    private int opt(int k, Mask mask ){
+    private  List<Integer> opt(int s){
+        int pontoVerificar = s;
+        List<Integer> rotaMinimizada = new ArrayList<>();
+        rotaMinimizada.add(s);
 
-        if(mask.size() == 2&&k!=0){
-            return this.dist[0][k];
+        int menor = Integer.MAX_VALUE;
+        int pontoMenor;
+
+        pontoMenor = pontoMaisProximo(s, rotaMinimizada);
+        rotaMinimizada.add(pontoMenor);
+
+        pontoMenor = pontoMaisProximo(s, rotaMinimizada);
+        rotaMinimizada.add(pontoMenor);
+
+        System.out.println("oi");
+        rotaMinimizada.stream()
+                .forEach(System.out::println);
+        System.out.println("fim /=");
+
+        int tamanhoRotaMinimizada = this.dimension -2;
+
+        while(tamanhoRotaMinimizada>0){
+            int custo = Integer.MAX_VALUE;
+            int pontoInserir = 0;
+
+            for (int i=0;i<this.dimension;i++){
+                if(rotaMinimizada.contains(i)){
+                    continue;
+                }
+
+                for(int j = 0; j<rotaMinimizada.size()-1; j++ ){
+                    int k1 = rotaMinimizada.get(j);
+                    int k2 = rotaMinimizada.get(j+1);
+                    System.out.println(k1+" "+k2);
+                    int custoNovaRota = dist[k1][i] + dist[k2][i] - dist[k1][k2];
+
+                    if(custoNovaRota<custo){
+                        custo = custoNovaRota;
+                        pontoInserir = i;
+                        pontoMenor = k1;
+                    }
+                }
+
+            }
+
+            if(custo!=Integer.MAX_VALUE){
+                inserirPontoApos(pontoInserir, rotaMinimizada, pontoMenor);
+            }
+
+            tamanhoRotaMinimizada-=1;
         }
 
-        Pair<Integer, Mask> p = new ImmutablePair<>(k, mask);
+        rotaMinimizada.add(s);
 
-        if(memo.get(p)!=null){
-            return memo.get(p);
-        }
+        return rotaMinimizada;
+    }
 
-        int ans = Integer.MAX_VALUE;
+    private int pontoMaisProximo(int s, List<Integer> listaPontos){
+        int menor = Integer.MAX_VALUE;
+        int pontoMaisProximo = 0;
 
-        for(int j=0; j < this.dimension; j++ ){
-            if(mask.contain(j)&&j!=k&&j!=0){
-
-                ans = Math.min(ans,
-                        opt(j, mask.remove(k))+dist[j][k]);
+        for (int i=0;i<this.dimension;i++){
+            if(listaPontos.contains(i)){
+                continue;
+            }
+            if(dist[s][i]<menor) {
+                menor = dist[s][i];
+                pontoMaisProximo = i;
             }
         }
 
-
-        memo.put(p, ans);
-
-        return ans;
+        return pontoMaisProximo;
     }
-
+    private void inserirPontoApos(int pontoInserir, List<Integer> rotaMinimizada, int pontoMenor){
+        int lastIndexOf = rotaMinimizada.lastIndexOf(pontoMenor);
+        lastIndexOf++;
+        rotaMinimizada.add(lastIndexOf, pontoInserir);
+    }
     @Override
     public void solve() {
-        int ans = Integer.MAX_VALUE;
+        List<Integer> opt = opt(0);
 
-        int valorInicial = (1 << (this.dimension+1))-1;
+        String collect = opt.stream()
+                .map(e -> Integer.toString(e.intValue()))
+                .collect(Collectors.joining(", "));
 
-        Mask mask = new BitMask(valorInicial).remove(0);
+        System.out.println(collect);
 
-        for(int i=0; i < this.dimension; i++ ){
-                ans = Math.min(ans,
-                        opt(i, mask)+dist[i][0]);
+        Set<Integer> set = new HashSet<>(opt);
+        System.out.println("tam: "+set);
+
+        int custo = 0;
+
+        for(int i = 1;i<opt.size();i++){
+            Integer k = opt.get(i);
+            Integer j = opt.get(i-1);
+
+            custo += dist[j][k];
         }
-        System.out.println("Custo: "+ans);
 
+        System.out.println("custo: "+custo);
     }
 
     @Override
