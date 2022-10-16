@@ -1,0 +1,8 @@
+set ITEM := 1 2 3 4;
+
+param: valor peso := 
+1 6 2
+2 10 4
+3 12 6
+4 13 7;
+param capacidade	:= 11 ;
