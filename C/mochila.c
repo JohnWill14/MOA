@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/time.h>
 
 
 int mochila(int pos, int w, int* pesos,int* valores);
@@ -33,10 +34,14 @@ int main(int argc, char *argv[]) {
     }
     
     fclose(sorce);
+ 
+    struct timeval stop, start;
+    gettimeofday ( &start, NULL );
 
-   int opt = mochila(qtd-1, capacidade, pesos, valores);
-
-   printf("Valor max: %d\n", opt);
+    int opt = mochila(qtd-1, capacidade, pesos, valores);
+    gettimeofday ( &stop, NULL );
+    printf("Valor max: %d\n", opt);
+    printf("Tempo: %lu milliseconds\n", (stop.tv_usec - start.tv_usec)/1000);
 
     return 0;
 }

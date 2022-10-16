@@ -48,7 +48,7 @@ int main(int argc, char *argv[]) {
     gettimeofday ( &stop, NULL );
 
     printf("Valor max: %d\n", opt);
-    printf("Tempo: %lu\n", (stop.tv_usec - start.tv_usec));
+    printf("Tempo: %lu\n", (stop.tv_usec - start.tv_usec)/1000);
 
     return 0;
 }
