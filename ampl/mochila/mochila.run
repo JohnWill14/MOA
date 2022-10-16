@@ -1,0 +1,6 @@
+reset;
+model mochila.mod;
+data mochila.dat;
+option solver cplex;
+solve;
+display item;
