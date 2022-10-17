@@ -17,6 +17,11 @@ public class CaixeiroATSP implements Caixeiro{
     private int dimension;
     private int[][] dist;
 
+    private int ans;
+
+    private long timeMillis;
+    private long timeNano;
+
     public CaixeiroATSP(InstanceATSP instance) {
         super();
         memo = new HashMap<>();
@@ -62,16 +67,34 @@ public class CaixeiroATSP implements Caixeiro{
 
         Mask mask = new BitMask(valorInicial).remove(0);
 
+        long begin = System.currentTimeMillis();
+        long beginNano = System.nanoTime();
+
         for(int i=0; i < this.dimension; i++ ){
                 ans = Math.min(ans,
                         opt(i, mask)+dist[i][0]);
         }
+
+        long endNano = System.nanoTime();
+        long end = System.currentTimeMillis();
+
+        this.ans = ans;
+
         System.out.println("Custo: "+ans);
+
+        this.timeMillis = end-begin;
+        this.timeNano = endNano - beginNano;
 
     }
 
     @Override
     public InfoInstance getInfo() {
-        return null;
+        InfoInstance instance = InfoInstance.builder()
+        .ans(this.ans)
+        .timeMillis(this.timeMillis)
+        .timeNano(this.timeNano)
+        .numeroItens(this.dimension)
+        .build();
+        return instance;
     }
 }

@@ -30,5 +30,13 @@ public class Main {
 
         caixeiro.solve();
 
+        InfoInstance info = caixeiro.getInfo();
+
+        System.out.println("*** Caixeiro ***");
+        System.out.println("valor maximo => "+ info.getAns());
+        System.out.println("Quantidade de itens => "+ info.getNumeroItens());
+        System.out.println("Valor em milisegundos => "+ info.getTimeMillis());
+        System.out.println("Valor em nanosegundos => "+ (info.getTimeNano()/1e6)+" * 1e6\n" );
+
     }
 }
