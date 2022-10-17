@@ -32,7 +32,7 @@ function opt(i, W) {
   return Math.max(yuri, opt(i - 1, W - pesos[i]) + valores[i]);
 }
 
-const data = fs.readFileSync('./large_scale/knapPI_3_100_1000_1', 'utf-8');
+const data = fs.readFileSync('./instances/low-dimensional/f10_l-d_kp_20_879', 'utf-8');
 const [firstLine] = data.split('\r');
 let [qtd, W] = firstLine.split(' ');
 

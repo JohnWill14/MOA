@@ -30,5 +30,10 @@ public class Main {
 
         caixeiro.solve();
 
+        InfoInstance info = caixeiro.getInfo();
+
+        System.out.println("Valor em milisegundos => "+ info.getTimeMillis());
+        System.out.println("Valor em nanosegundos => "+ (info.getTimeNano()/1e6)+" * 1e6\n" );
+
     }
 }

@@ -1,0 +1,14 @@
+NAME:  t66
+TYPE: ATSP
+COMMENT: 6 city problem 
+DIMENSION:  6
+EDGE_WEIGHT_TYPE: EXPLICIT
+EDGE_WEIGHT_FORMAT: FULL_MATRIX 
+EDGE_WEIGHT_SECTION
+    9999       1   9999    9999    9999    9999
+       5    9999   9999    9999    9999       2
+    9999      90   9999       1      25    9999
+       1    9999   9999    9999    9999     200
+    9999    9999      1    9999    9999    9999
+    9999     500   9999    9999       3    9999
+EOF

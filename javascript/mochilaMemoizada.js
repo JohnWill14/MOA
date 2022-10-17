@@ -42,7 +42,7 @@ function opt(i, W) {
   return yuri;
 }
 
-const data = fs.readFileSync('./large_scale/knapPI_3_1000_1000_1', 'utf8');
+const data = fs.readFileSync('./instances/large_scale/knapPI_1_1000_1000_1', 'utf8');
 // if (err) throw err;
 const [firstLine] = data.split('\r');
 let [qtd, W] = firstLine.split(' ');

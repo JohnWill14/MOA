@@ -21,7 +21,7 @@ def opt(i, w):
   memo[i][w] = ans
   return ans
 
-with open("./large_scale/knapPI_1_1000_1000_1") as fileIn:
+with open("./instances/large_scale/knapPI_1_200_1000_1") as fileIn:
   qtd, w = fileIn.readline().split()
   qtd = int(qtd)
   w = int(w)

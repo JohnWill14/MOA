@@ -15,7 +15,7 @@ def opt(i, w):
   return max(optOne, opt(i -1, w-pesos[i]) + valores[i])
 
 
-with open("./large_scale/knapPI_1_100_1000_1") as fileIn:
+with open("./instances/low-dimensional/f10_l-d_kp_20_879") as fileIn:
   qtd, w = fileIn.readline().split()
   for line in fileIn:
     n1, n2 = (int(s) for s in line.split())

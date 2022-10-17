@@ -1,0 +1,15 @@
+NAME:  t2-4
+TYPE: ATSP
+COMMENT:  4 
+DIMENSION:  4
+EDGE_WEIGHT_TYPE: EXPLICIT
+EDGE_WEIGHT_FORMAT: FULL_MATRIX 
+EDGE_WEIGHT_SECTION
+   9999     10     15     20 
+     10   9999     25     25 
+     15     25   9999     30 
+     20     25     30   9999    
+    
+EOF
+   
+        
