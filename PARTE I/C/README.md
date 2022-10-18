@@ -12,10 +12,10 @@
   
   
   ```bash
-  ./a.out
+  ./a.out nome_do_arquivo
   ```
   
-   ## mochilaMemorizada.c
+   ## mochilaMemorizada.c 
 
   Compilar:
   
@@ -27,5 +27,5 @@
   
   
   ```bash
-  ./a.out
+  ./a.out nome_do_arquivo
   ```
